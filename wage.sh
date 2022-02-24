@@ -1,5 +1,7 @@
 echo "Welcome to Employee Wage Computation Program"
 
+work_hr
+{
 emp_rate_per_hr=20
 max_work_hrs=100
 work_day=20
@@ -39,6 +41,12 @@ total_work_hrs=$(($total_work_hrs + $work_hrs))
 echo "total work hrs is " $total_work_hrs
 fi
 done
+
+}
+work_hr
+
+echo "Total work hrs is: " $total_work_hrs
+
 
 #Calculate daily emp wage
 
