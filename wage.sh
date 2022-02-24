@@ -45,3 +45,9 @@ else
     echo "Parttime"
     #work_hrs=8
 fi
+
+#calculate wage for a month
+
+work_day=20
+monthly_wage=$(($salary * $work_day))
+echo "Monthly Employee Wage" $monthly_wage
