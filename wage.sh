@@ -32,3 +32,16 @@ empRatePerHr=20
 empHrs=8
 salary=$(( $randomCheck * $empHrs * $empRatePerHr ))
 echo "Daily Employee Wage" $salary
+
+#Add Part time emp & wage
+
+emp_time=$(( RANDOM%2 +1 ))
+
+if (( $emp_time%2 == o ))
+then
+    echo "Fulltime"
+    #work_hrs=8
+else
+    echo "Parttime"
+    #work_hrs=8
+fi
