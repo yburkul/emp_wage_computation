@@ -9,3 +9,10 @@ then
 else
      echo "Absent"
 fi
+
+#Calculate daily emp wage
+
+empRatePerHr=20
+empHrs=8
+salary=$(( $randomCheck * $empHrs * $empRatePerHr ))
+echo "Daily Employee Wage" $salary
