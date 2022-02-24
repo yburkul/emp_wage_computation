@@ -1,13 +1,14 @@
 echo "Welcome to Employee Wage Computation Program"
 
-work_hr
+work_hr()
 {
 emp_rate_per_hr=20
 max_work_hrs=100
 work_day=20
 total_work_hrs=0
 total_work_day=0
-while(( $tatal_work_hrs != $max_work_hrs && $total_work_day != $work_day ))
+while(( $total_work_hrs != $max_work_hrs && $total_work_day != $work_day O
+))
 do
 
 isPresent=1
@@ -24,7 +25,7 @@ fi
 
 emp_time=$(( RANDOM%3 ))
 
-if (( $randomCheck == 1 ))
+#if (( $randomCheck == 1 ))
 case $emp_time in
      1) echo "FullTime"
         work_hrs=8
@@ -43,9 +44,13 @@ echo "total work hrs is " $total_work_hrs
 daily_emp_wage=$(($randomCheck * $work_hrs * $emp_rate_per_hr))
 echo "Daily Employee Wage" $daily_emp_wage
 
-fi
-done
+#fi
 
+done
+echo "Total work day is:" $total_work_day
+
+total_wage=$(($total_work_hrs * $emp_rate_per_hr))
+echo "Total wage is: " $total_work_hrs
 }
 work_hr
 
