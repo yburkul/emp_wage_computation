@@ -10,6 +10,22 @@ else
      echo "Absent"
 fi
 
+#add  part time emp & wage using switch case
+
+emp_time=$(( RANDOM%3 ))
+
+case $emp_time in
+     1) echo "FullTime"
+        work_hrs=8
+            ;;
+     2) echo "PartTime"
+         work_hrs=8
+            ;;
+     *) echo "FullTime + PartTime"
+         work_hrs=16
+            ;;
+esac
+
 #Calculate daily emp wage
 
 empRatePerHr=20
