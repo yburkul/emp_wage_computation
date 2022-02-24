@@ -36,9 +36,13 @@ case $emp_time in
          work_hrs=16
             ;;
 esac
-
+echo "Work hrs" $work_hrs
 total_work_hrs=$(($total_work_hrs + $work_hrs))
 echo "total work hrs is " $total_work_hrs
+
+daily_emp_wage=$(($randomCheck * $work_hrs * $emp_rate_per_hr))
+echo "Daily Employee Wage" $daily_emp_wage
+
 fi
 done
 
